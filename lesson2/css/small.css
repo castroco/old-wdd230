@@ -11,18 +11,19 @@ header p {
 }
 .webCard {
     display: block;
-    margin: 35px 0;
+    margin: 45px 0;
     text-align: center;
+    box-shadow: 2px 2px 3px 2px rgb(3, 4, 94, 0.65);
 }
 .webCard img {
     max-width: 100%;
     margin: 0 auto;
 }
 .webCard h2 {
-    margin: 5px 0;
+    margin: 20px 0 5px 0;
 }
 .webCard p {
-    margin: 5px 0;
+    margin: 5px 0 10px 0;
 }
 /*
 img {
