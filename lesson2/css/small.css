@@ -4,7 +4,7 @@ h1  {
 header {
     display: grid;
     grid-template-rows: 1fr 0.5fr;
-    justify-items:self-end;
+    justify-items: center;
 }
 header p {
     margin: 5px;
@@ -12,9 +12,10 @@ header p {
 .webCard {
     display: block;
     margin: 35px 0;
+    text-align: center;
 }
 .webCard img {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
 }
 .webCard h2 {
