@@ -7,4 +7,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    #proximity {
+        grid-column: 3/4;
+    }
 }

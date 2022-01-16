@@ -7,4 +7,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .webCard img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #proximity {
+        grid-column: 1/3;
+    }
+    #proximity a {
+        display: block;
+    }
 }
