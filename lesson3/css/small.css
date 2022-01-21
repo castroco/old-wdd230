@@ -1,0 +1,68 @@
+
+body {
+    /*min-width: 100px;*/
+    font-family: 'Roboto Slab', serif;
+}
+#container {
+    min-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+header, footer {
+	background-color: #004b23;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+    color: #ccff33;
+}
+
+header {
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+}
+
+footer #lastUpdated {
+    font-size: 0.8em;
+    color:#9ef01a;
+}
+nav {
+    background-color: #9ef01a;
+    text-align: center;
+}
+ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li a {
+    display: block;
+    color: #006400;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+nav ul li a:hover {
+    background-color: #006400;
+    color: #ccff33;
+}
+#domainImg {
+    max-width: 350px;
+}
+#colorImg {
+    width: 400px;
+    max-width: 100%;
+}
+#slabFont {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+}
+#merryFont {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2em;
+}
