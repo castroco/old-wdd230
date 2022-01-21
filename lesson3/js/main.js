@@ -5,7 +5,6 @@ function getYear() {
 }
 
 function addLine1 () {
-    console.log("document123:  ", document);
     const yearContainer = document.querySelector("#line1");
     let message = `&#169; ${getYear()} .:|:. Carlos O. Castro .:|:. Chile`;
     yearContainer.innerHTML = message;
