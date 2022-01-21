@@ -1,10 +1,9 @@
 
 body {
-    /*min-width: 100px;*/
     font-family: 'Roboto Slab', serif;
 }
 #container {
-    min-width: 360px;
+    min-width: 380px;
     margin: 0 auto;
     text-align: center;
 
@@ -52,7 +51,8 @@ nav ul li a:hover {
     color: #ccff33;
 }
 #domainImg {
-    max-width: 350px;
+    width: 400px;
+    max-width: 100%;
 }
 #colorImg {
     width: 400px;
