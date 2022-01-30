@@ -1,0 +1,72 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    align-items: center;
+}
+
+header img {
+    width: 60px;
+}
+header div img {
+    width: 20px;
+    height: 20px;
+}
+header div h1 {
+    font-size: 1.3em;
+    margin: 5px 0 5px 5px;
+}
+header div h2 {
+    font-size: 1em;
+    margin: 0 0 0 5px;
+}
+
+header nav {
+    text-align: center;
+    font-size: 1.5em;
+}
+header nav ul li a {
+    text-decoration: none;
+}
+main {
+    display: block;
+}
+
+main div, main div div  {
+    border: 2px solid black;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+#spotlite {
+    height: 418px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+nav ul li:first-child {
+    display: block;
+    padding: 0.5rem 0;
+}
+.menuOpen {
+    font-size: 0.1em;
+}
+
+.menuOpen li {
+    display: block;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.menuHidden li {
+    display: none;
+    margin: 0;
+    padding: 0.5rem 0;
+}

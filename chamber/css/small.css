@@ -1,0 +1,54 @@
+header {
+
+}
+
+header img {
+    width: 80px;
+}
+header div img {
+    width: 30px;
+    height: 30px;
+}
+main {
+    display: block;
+}
+
+main div, main div div  {
+    border: 2px solid black;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+#spotlite {
+    height: 418px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+nav ul li:first-child {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.menuOpen li {
+    display: block;
+    margin: 0;
+    padding: 0.5rem 0;
+    
+}
+
+.menuHidden li {
+    display: none;
+    margin: 0;
+    padding: 0.5rem 0;
+}
