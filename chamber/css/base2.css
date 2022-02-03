@@ -1,7 +1,14 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
 header {
     display: grid;
     grid-template-columns: 1fr 4fr 2fr 1fr;
     align-items: center;
+    background-color: #004b23;
+    color: #ccff33;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
 }
 
 header img {
@@ -26,6 +33,7 @@ header nav {
 }
 header nav ul li a {
     text-decoration: none;
+    color: #ccff33;
 }
 main {
     display: block;
@@ -41,23 +49,31 @@ main div, main div div  {
     height: 418px;
 }
 
-nav ul li:first-child {
+header nav ul li:first-child {
     display: block;
     padding: 0.5rem 0;
 }
 
 #menuid {
+    color: #006400;
     display: grid;
-    grid-template-rows: 1f 1f 1f;
+    grid-template-rows: auto;
     justify-items: center;
     align-items: center;
 }
 #menuid p {
     margin: 0;
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #9ef01a;
+    color: #006400;
+    font-family: 'Merriweather', serif;
 }
 
 #menuid p:hover {
-    color: red;
+    background-color: #006400;
+    color: #ccff33;
 }
 
 .menuHidden {

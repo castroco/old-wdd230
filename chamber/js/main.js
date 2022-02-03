@@ -1,4 +1,4 @@
-const menuItems = ["home", "menu1", "menu2"];
+const menuItems = ["home", "menu1", "menu2", "menu4"];
 
 function changeClass() {
     /*document.querySelector("#menuid").classList.toggle("menuHidden");*/
