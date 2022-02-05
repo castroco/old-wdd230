@@ -2,39 +2,49 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 header {
-    display: grid;
-    grid-template-columns: 1fr 4fr 2fr 1fr;
-    align-items: center;
     background-color: #004b23;
     color: #ccff33;
     font-family: 'Merriweather', serif;
     font-size: 1em;
 }
+#firstLine {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
 
-header img {
+#firstLine img {
     width: 60px;
 }
-header div img {
+#social img {
     width: 20px;
     height: 20px;
 }
-header div h1 {
+header div div h1 {
     font-size: 1.3em;
     margin: 5px 0 5px 5px;
 }
-header div h2 {
+header div div h2 {
     font-size: 1em;
     margin: 0 0 0 5px;
 }
 
-header nav {
+header div nav {
     text-align: center;
     font-size: 1.5em;
 }
-header nav ul li a {
+
+#firstLine nav ul {
+    padding: 0;
+}
+
+#firstLine nav ul li a {
     text-decoration: none;
     color: #ccff33;
 }
+
+
 main {
     display: block;
 }
@@ -49,9 +59,8 @@ main div, main div div  {
     height: 418px;
 }
 
-header nav ul li:first-child {
+header div nav ul li:first-child {
     display: block;
-    padding: 0.5rem 0;
 }
 
 #menuid {
@@ -60,6 +69,7 @@ header nav ul li:first-child {
     grid-template-rows: auto;
     justify-items: center;
     align-items: center;
+    margin: 10px 0 0 0;
 }
 #menuid p {
     margin: 0;
@@ -69,6 +79,7 @@ header nav ul li:first-child {
     background-color: #9ef01a;
     color: #006400;
     font-family: 'Merriweather', serif;
+    font-size: 1.03em;
 }
 
 #menuid p:hover {
@@ -78,4 +89,10 @@ header nav ul li:first-child {
 
 .menuHidden {
     display: none;
+}
+
+#timeDiv {
+    text-align: center;
+    padding: 7px;
+    background-color: #006400;
 }
