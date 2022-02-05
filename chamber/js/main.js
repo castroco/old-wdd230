@@ -3,9 +3,37 @@ const dayOfWeekLong = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "
 const monthLong = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
 
 function changeClass() {
-    /*document.querySelector("#menuid").classList.toggle("menuHidden");*/
+    const hamburger = document.querySelector("#hamburger");
+    console.log("hamburger", hamburger);
+    if (hamburger == null) {
+        const burgerCont = document.querySelector("#hamburgerContainer");
+        burgerCont.innerHTML = "";
+        liElement = document.createElement("li");
+        liElement.setAttribute('id', 'hamburger');
+        liElement.setAttribute('onclick', "changeClass()");
+        aElement = document.createElement("a");
+        aElement.innerHTML = '&#9776;';
+        liElement.appendChild(aElement);
+        burgerCont.appendChild(liElement);
+    } else {
+
+        const burgerCont = document.querySelector("#hamburgerContainer");
+        burgerCont.innerHTML = "";
+        divImage = document.createElement("div");
+        closeImage = document.createElement("img");
+        closeImage.setAttribute('src', 'images/cancel.svg');
+        closeImage.setAttribute('onclick', "changeClass()");
+        divImage.appendChild(closeImage);
+        burgerCont.appendChild(divImage);
+    }
+    /*
+    <li onclick="changeClass()"><a href="#">&#9776;</a></li>
+    <img src="images/faceicon2.svg" alt=""></img> 
+    .classList.toggle("menuHidden");
+    */
+
     const menu = document.querySelector("#menuid");
-    console.log("menu: ", menu);
+    /*console.log("menu: ", menu);*/
     if (menu.innerHTML == "") {
         menuItems.forEach(element => {
             let titleElement = document.createElement("p");

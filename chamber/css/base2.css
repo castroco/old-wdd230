@@ -6,16 +6,18 @@ header {
     color: #ccff33;
     font-family: 'Merriweather', serif;
     font-size: 1em;
+    min-width: 375px;
 }
 #firstLine {
     display: grid;
-    grid-template-columns: 1fr 4fr 2fr 1fr;
+    grid-template-columns: 1.4fr 3.6fr 2fr 1fr;
     align-items: center;
     justify-items: center;
 }
 
 #firstLine img {
     width: 60px;
+    margin-left: 0px;
 }
 #social img {
     width: 20px;
@@ -23,7 +25,7 @@ header {
 }
 header div div h1 {
     font-size: 1.3em;
-    margin: 5px 0 5px 5px;
+    margin: 0 0 5px 5px;
 }
 header div div h2 {
     font-size: 1em;
@@ -42,6 +44,11 @@ header div nav {
 #firstLine nav ul li a {
     text-decoration: none;
     color: #ccff33;
+}
+
+#hamburgerContainer img {
+    width: 20px;
+    height: 20px;
 }
 
 
