@@ -1,0 +1,8 @@
+@media only screen and (min-width: 800px) {
+	#menuid ul {
+		display: flex;
+	}
+    #menuid ul li {
+        flex: 1 1 100%;
+    }
+}

@@ -1,6 +1,22 @@
-const menuItems = ["home", "menu1", "menu2", "menu4"];
-const dayOfWeekLong = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-const monthLong = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
+const menuItems = [
+    {
+        name: 'Home',
+        src: './index.html'
+    },
+    {
+        name: 'Menu1',
+        src: './menu1.html'
+    },
+    {
+        name: 'Menu2',
+        src: './menu2.html'
+    },
+    {
+        name: 'Menu3',
+        src: './menu3.html'
+    }
+
+];
 
 function changeClass() {
     const hamburger = document.querySelector("#hamburger");
@@ -34,12 +50,17 @@ function changeClass() {
 
     const menu = document.querySelector("#menuid");
     /*console.log("menu: ", menu);*/
+    let menulist = document.createElement("ul");
     if (menu.innerHTML == "") {
         menuItems.forEach(element => {
-            let titleElement = document.createElement("p");
-            titleElement.innerHTML = element;
-            menu.appendChild(titleElement);
+            let listitem = document.createElement("li");
+            let linkElement = document.createElement("a");
+            linkElement.innerHTML = `${element.name}`;
+            linkElement.setAttribute('href', element.src);
+            listitem.appendChild(linkElement);
+            menulist.appendChild(listitem);
         });
+        menu.appendChild(menulist);
     } else {
         menu.innerHTML = "";
     }
@@ -47,35 +68,11 @@ function changeClass() {
 
 function insertDate() {
     let todayDate = new Date();
-    console.log("todayDate", todayDate);
-    let year = todayDate.getFullYear();
-    let month = todayDate.getMonth();
-    let day = todayDate.getDate();
-    let dayOfWeek = todayDate.getDay();
-    let message = `${dayOfWeekLong[dayOfWeek-1]}, ${day} ${monthLong[month]} ${year}`;
+    const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(todayDate);
+    console.log("fulldateUK: ", fulldateUK);
+    let message = `${fulldateUK}`;
     const dateContainer = document.querySelector("#timeDiv");
     dateContainer.innerHTML = message;
-
-    /* Short way- Better way to format the date   */
-    const fulldateUS = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(todayDate);
-    const longdateUS = new Intl.DateTimeFormat("en-US", { dateStyle: "long" }).format(todayDate);
-    const mediumdateUS = new Intl.DateTimeFormat("en-US", { dateStyle: "medium" }).format(todayDate);
-    const shortdateUS = new Intl.DateTimeFormat("en-US", { dateStyle: "short" }).format(todayDate);
-
-    const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(todayDate);
-    const longdateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "long"}).format(todayDate);
-    const mediumdateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "medium"}).format(todayDate);
-    const shortdateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "short"}).format(todayDate);
-    
-    console.log("fulldate US: ", fulldateUS);
-    console.log("longdate US: ", longdateUS);
-    console.log("mediumdate US: ", mediumdateUS);
-    console.log("shortdate US: ", shortdateUS);
-
-    console.log("fulldate UK: ", fulldateUK);
-    console.log("longdate UK: ", longdateUK);
-    console.log("mediumdate UK: ", mediumdateUK);
-    console.log("shortdate UK: ", shortdateUK);
 }
 
 /*

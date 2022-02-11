@@ -56,9 +56,9 @@ nav ul li:first-child {
     margin: 0;
 }
 
-#menuid p:hover (
+#menuid p:hover {
     color: red;
-)
+}
 
 .menuHidden {
     display: none;

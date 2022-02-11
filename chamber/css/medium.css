@@ -1,0 +1,12 @@
+@media only screen and (min-width: 550px) {
+	#spotlite {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 200px;
+        gap: 8px;
+        padding: 10px;
+    }
+    #spotlite div {
+        min-width: 180px ;
+    }
+}

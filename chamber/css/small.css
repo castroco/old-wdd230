@@ -1,16 +1,65 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
 header {
+    background-color: #004b23;
+    color: #ccff33;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    min-width: 375px;
+}
+#firstLine {
+    display: grid;
+    grid-template-columns: 1.4fr 3.6fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#firstLine img {
+    width: 60px;
+    margin-left: 0px;
+}
+#social img {
+    width: 20px;
+    height: 20px;
+}
+header div div h1 {
+    font-size: 1.3em;
+    margin: 0 0 5px 5px;
+}
+header div div h2 {
+    font-size: 1em;
+    margin: 0 0 0 5px;
+}
+
+header div nav {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#firstLine nav ul {
+    padding: 0;
+    list-style-type: none;
 
 }
 
-header img {
-    width: 80px;
+#firstLine nav ul li a {
+    text-decoration: none;
+    color: #ccff33;
 }
-header div img {
-    width: 30px;
-    height: 30px;
+
+#hamburgerContainer img {
+    width: 20px;
+    height: 20px;
 }
+
+
 main {
     display: block;
+}
+
+main div {
+    min-width: 371px;
 }
 
 main div, main div div  {
@@ -23,32 +72,47 @@ main div, main div div  {
     height: 418px;
 }
 
-nav {
-    text-align: center;
-}
+/*header div nav ul li:first-child {
+   display: block;
+}*/
 
-nav ul {
+#menuid {
+    color: #006400;
+    align-items: center;
+    margin: 10px 0 0 0;
+    background-color: #9ef01a;
+}
+#menuid ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-   
+    text-align: center;
 }
 
-nav ul li:first-child {
+#menuid ul li a {
     display: block;
-    padding: 0.5rem 0;
-}
-
-.menuOpen li {
-    display: block;
-    margin: 0;
-    padding: 0.5rem 0;
+    text-decoration: none;
+    margin: 2px;
+    background-color: #9ef01a;
+    color: #006400;
+    transition: 0.5s;
     
 }
 
-.menuHidden li {
+#menuid ul li a:hover {
+    /*background-color: #006400;*/
+    background-color: #006400;
+    color: #9ef01a;
+    padding: 0 1rem;
+    
+}
+
+.menuHidden {
     display: none;
-    margin: 0;
-    padding: 0.5rem 0;
+}
+
+#timeDiv {
+    text-align: center;
+    padding: 7px;
+    background-color: #006400;
 }
