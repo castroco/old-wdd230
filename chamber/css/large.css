@@ -1,8 +1,79 @@
 @media only screen and (min-width: 800px) {
-	#menuid ul {
+    #firstlineImg {
+        grid-area: firstlineImg;
+    }
+    #titlesDiv {
+        grid-area: titlesDiv;
+    }
+    #social {
+        grid-area: social;
+    }
+    #hamburgerNav {
+        grid-area: hamburgerNav;
+    }
+    #timeDiv {
+        grid-area: timeDiv;
+    }
+    #menuid {
+        grid-area: menuid;
+    }
+    
+    #header {
+        display: grid;
+        grid-template-columns: 0.8fr 3fr 4fr 1fr;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "firstlineImg titlesDiv menuid social"
+        "timeDiv timeDiv timeDiv timeDiv";
+    }
+    
+    #menuid ul {
 		display: flex;
 	}
     #menuid ul li {
         flex: 1 1 100%;
     }
-}
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr 1fr;
+        gap: 5px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "event hero spotlight"
+        "weather hero spotlight"
+        "join news spotlight";
+    }
+    #hero {
+        height: 410px;
+    }
+
+    #spotlight {
+        height: 610px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 5px 5px 5px 5px;
+        gap: 0px;
+    }
+
+    
+    #spotlight div {
+        min-width: 0;
+        height: 200px;
+        margin: 0;
+    }
+    #spotlight1 {
+        border-bottom: 1px solid;
+        padding: 0 0 0 0;
+    }
+    #spotlight2 {
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+    }
+    #spotlight3 {
+        display: block;
+        border-top: 1px solid;
+    }

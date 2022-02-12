@@ -10,7 +10,7 @@ header {
 }
 #firstLine {
     display: grid;
-    grid-template-columns: 1.4fr 3.6fr 2fr 1fr;
+    grid-template-columns: 0.8fr 3.6fr 2fr 1fr;
     align-items: center;
     justify-items: center;
 }
@@ -18,6 +18,11 @@ header {
 #firstLine img {
     width: 60px;
     margin-left: 0px;
+}
+
+#titlesDiv {
+    justify-self: left;
+    padding-left: 3%;
 }
 #social img {
     width: 20px;
@@ -65,10 +70,9 @@ main div {
 main div, main div div  {
     border: 2px solid black;
     height: 200px;
-    margin-bottom: 10px;
 }
 
-#spotlite {
+#spotlight {
     height: 418px;
 }
 
@@ -107,7 +111,7 @@ main div, main div div  {
     
 }
 
-.menuHidden {
+.menuHidden, #spotlight3 {
     display: none;
 }
 
@@ -115,4 +119,8 @@ main div, main div div  {
     text-align: center;
     padding: 7px;
     background-color: #006400;
+}
+
+#join {
+    display: none;
 }

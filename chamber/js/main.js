@@ -5,15 +5,15 @@ const menuItems = [
     },
     {
         name: 'Menu1',
-        src: './menu1.html'
+        src: '#'
     },
     {
         name: 'Menu2',
-        src: './menu2.html'
+        src: '#'
     },
     {
         name: 'Menu3',
-        src: './menu3.html'
+        src: '#'
     }
 
 ];

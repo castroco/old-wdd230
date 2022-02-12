@@ -1,12 +1,48 @@
 @media only screen and (min-width: 550px) {
-	#spotlite {
+    #hero {
+        grid-area: hero;
+    }
+    #event {
+        grid-area: event;
+    }
+    #weather {
+        grid-area: weather;
+    }
+    #news {
+        grid-area: news;
+    }
+
+	#spotlight {
+        grid-area: spotlight;
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: 200px;
         gap: 8px;
         padding: 10px;
     }
-    #spotlite div {
+    #spotlight div {
         min-width: 180px ;
+    }
+    #join {
+        display: block;
+        grid-area: join;
+        height: 200px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 5px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "hero hero"
+        "news news"
+        "spotlight spotlight"
+        "join join"
+        "event weather";
+    }
+
+    main div {
+        min-width: 0;
     }
 }
