@@ -8,11 +8,11 @@ const menuItems = [
         src: '#'
     },
     {
-        name: 'Menu2',
+        name: 'Leo',
         src: '#'
     },
     {
-        name: 'Menu3',
+        name: 'Karina',
         src: '#'
     }
 

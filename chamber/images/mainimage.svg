@@ -4,14 +4,13 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250.5 241.3"
 	 style="enable-background:new 0 0 250.5 241.3;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#38B000;stroke:#006400;stroke-miterlimit:10;}
-	.st1{fill:#CCFF33;stroke:#004B23;stroke-width:10;stroke-miterlimit:10;}
-	.st2{fill:#004B23;stroke:#004B23;stroke-width:9;stroke-miterlimit:10;}
-	.st3{font-family:'MyriadPro-Regular';}
-	.st4{font-size:138.7759px;}
+	.st0{fill:#CCFF33;stroke:#004B23;stroke-width:10;stroke-miterlimit:10;}
+	.st1{fill:#004B23;}
+	.st2{font-family:'MyriadPro-Bold';}
+	.st3{font-size:138.7759px;}
+	.st4{fill:none;stroke:#004B23;stroke-width:9;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M201.3,224.8H54.6c-18.4,0-33.3-14.9-33.3-33.3V42.2c0-18.4,14.9-33.3,33.3-33.3h146.8
-	c18.4,0,33.3,14.9,33.3,33.3v149.2C234.7,209.9,219.7,224.8,201.3,224.8z"/>
-<circle class="st1" cx="128" cy="118.3" r="72.5"/>
-<text transform="matrix(1.3064 0 0 1 82.4552 163.1069)" class="st2 st3 st4">$</text>
+<circle class="st0" cx="128" cy="118.3" r="72.5"/>
+<text transform="matrix(1.3064 0 0 1 82.4551 163.1064)" class="st1 st2 st3">$</text>
+<text transform="matrix(1.3064 0 0 1 82.4551 163.1064)" class="st4 st2 st3">$</text>
 </svg>

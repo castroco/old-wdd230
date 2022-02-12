@@ -1,21 +1,44 @@
 body {
     font-family: 'Roboto Slab', serif;
 }
+
+#firstlineImg {
+    grid-area: firstlineImg;
+}
+#titlesDiv {
+    grid-area: titlesDiv;
+}
+#social {
+    grid-area: social;
+}
+#hamburgerNav {
+    grid-area: hamburgerNav;
+}
+#timeDiv {
+    grid-area: timeDiv;
+}
+#menuid {
+    grid-area: menuid;
+}
+
 header {
+    display: grid;
+    grid-template-columns: 0.8fr 3.6fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "firstlineImg titlesDiv social hamburgerNav"
+    "timeDiv timeDiv timeDiv timeDiv"
+    "menuid menuid menuid menuid";
     background-color: #004b23;
     color: #ccff33;
     font-family: 'Merriweather', serif;
     font-size: 1em;
     min-width: 375px;
 }
-#firstLine {
-    display: grid;
-    grid-template-columns: 0.8fr 3.6fr 2fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
 
-#firstLine img {
+header img {
     width: 60px;
     margin-left: 0px;
 }
@@ -28,27 +51,34 @@ header {
     width: 20px;
     height: 20px;
 }
-header div div h1 {
+#titlesDiv h1 {
     font-size: 1.3em;
     margin: 0 0 5px 5px;
 }
-header div div h2 {
+#titlesDiv h2 {
     font-size: 1em;
     margin: 0 0 0 5px;
 }
 
-header div nav {
+#hamburgerNav {
     text-align: center;
     font-size: 1.5em;
 }
 
-#firstLine nav ul {
+#timeDiv {
+    justify-self: normal;
+}
+
+#menuid {
+    justify-self: normal;
+}
+header nav ul {
     padding: 0;
     list-style-type: none;
 
 }
 
-#firstLine nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: #ccff33;
 }
