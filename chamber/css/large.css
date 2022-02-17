@@ -77,3 +77,57 @@
         display: block;
         border-top: 1px solid;
     }
+
+    /* FOOTER */
+
+    #fgThird * {
+        font-size: 1em;
+    }
+
+    #footerLogo {
+        padding: 10px 0 0 40px;
+    }
+    #footerTitle {
+       font-size: 1.4em;
+    }
+    #footerAddress {
+       font-size: 1em;
+       
+    }
+    #footerMail {
+        margin-bottom: 4px;
+    }
+    #footerPhone {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    #footerLocation {
+        margin-top: 6px;
+        margin-bottom: 4px;
+    }
+
+    #footerPersonal {
+        display: flex;
+        padding: 5px 0;
+    }
+
+    #footerPersonal p {
+        flex: 1 1 100%;
+    }
+
+    #completeYear {
+       
+    }
+
+    #lastUpdate {
+      
+    }
+
+    #footerName {
+        
+    }
+    #footercourse {
+        
+    }
+
+}

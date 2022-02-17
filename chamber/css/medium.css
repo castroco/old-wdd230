@@ -1,4 +1,7 @@
 @media only screen and (min-width: 550px) {
+    main div {
+        min-width: 0;
+    }
     #hero {
         grid-area: hero;
     }
@@ -19,6 +22,7 @@
         height: 200px;
         gap: 8px;
         padding: 10px;
+        min-width: none;
     }
     #spotlight div {
         min-width: 180px ;
@@ -41,8 +45,86 @@
         "join join"
         "event weather";
     }
+   
+    #footerGeneral {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        align-items: center;
+        grid-template-areas: 
+        "flogo fgsecond fgthird";
+    }
 
-    main div {
-        min-width: 0;
+    #fgSecond {
+        grid-area: fgsecond;
+    }
+
+    #fgThird {
+        grid-area: fgthird;
+    }
+
+    #footerLogo {
+        grid-area: flogo;
+        width: 100px;
+        padding: 10px 0;
+    }
+    #footerTitle {
+       grid-area: ftitle;
+       font-size: 1.1em;
+       text-align: left;
+       margin-bottom: 5px;
+    }
+    #footerAddress {
+       grid-area: faddres;
+       text-align: left;
+       width: 100%;
+       justify-self: left;
+       
+    }
+    #footerMail {
+        grid-area: fmail;
+        margin-bottom: 2px;
+    }
+    #footerPhone {
+        grid-area: fphone;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    #footerLocation {
+        grid-area: flocation;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    #footerPersonal {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr 0.8fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "completeyear footername footercourse"
+        "lastupdate lastupdate lastupdate";
+        justify-content: center;
+        padding: 0 10%;
+    }
+
+    #completeYear {
+        grid-area: completeyear;
+        padding-top: 2px;
+        border-right: 2px solid #ccff33;
+    }
+
+    #lastUpdate {
+        grid-area: lastupdate;
+    }
+
+    #footerName {
+        grid-area: footername;
+        font-size: 1em;
+        border-right: 2px solid #ccff33;
+    }
+    #footercourse {
+        grid-area: footercourse;
+        font-size: 0.8em;
+        padding-top: 2px;
+        border-right: 2px solid #ccff33;
     }
 }

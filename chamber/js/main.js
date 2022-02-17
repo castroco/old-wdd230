@@ -18,21 +18,26 @@ const menuItems = [
 
 ];
 
+const withTypes = {
+        medium: 550,
+        large: 800
+}
+
 function changeClass() {
     const hamburger = document.querySelector("#hamburger");
     console.log("hamburger", hamburger);
     if (hamburger == null) {
         const burgerCont = document.querySelector("#hamburgerContainer");
         burgerCont.innerHTML = "";
-        liElement = document.createElement("li");
+        const liElement = document.createElement("li");
         liElement.setAttribute('id', 'hamburger');
         liElement.setAttribute('onclick', "changeClass()");
-        aElement = document.createElement("a");
+        const aElement = document.createElement("a");
         aElement.innerHTML = '&#9776;';
         liElement.appendChild(aElement);
         burgerCont.appendChild(liElement);
-    } else {
 
+    } else {
         const burgerCont = document.querySelector("#hamburgerContainer");
         burgerCont.innerHTML = "";
         divImage = document.createElement("div");
@@ -42,16 +47,19 @@ function changeClass() {
         divImage.appendChild(closeImage);
         burgerCont.appendChild(divImage);
     }
-    /*
-    <li onclick="changeClass()"><a href="#">&#9776;</a></li>
-    <img src="images/faceicon2.svg" alt=""></img> 
-    .classList.toggle("menuHidden");
-    */
 
     const menu = document.querySelector("#menuid");
-    /*console.log("menu: ", menu);*/
-    let menulist = document.createElement("ul");
     if (menu.innerHTML == "") {
+        addNav(menu);
+    } else {
+        menu.innerHTML = "";
+    }
+
+}
+
+function addNav(menu) {
+        console.log("menu in addMenu(): ", menu);
+        const menulist = document.createElement("ul");
         menuItems.forEach(element => {
             let listitem = document.createElement("li");
             let linkElement = document.createElement("a");
@@ -61,18 +69,42 @@ function changeClass() {
             menulist.appendChild(listitem);
         });
         menu.appendChild(menulist);
-    } else {
-        menu.innerHTML = "";
+}
+
+function menuLargeView(){  
+    const mainWith = window.innerWidth;
+    if (mainWith > withTypes.large) {
+        const menu = document.querySelector("#menuid");
+        if (menu.innerHTML == "") {
+            changeClass();
+        }
     }
 }
 
-function insertDate() {
-    let todayDate = new Date();
-    const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(todayDate);
-    console.log("fulldateUK: ", fulldateUK);
-    let message = `${fulldateUK}`;
-    const dateContainer = document.querySelector("#timeDiv");
-    dateContainer.innerHTML = message;
+function pageDates() {
+    try {
+        let todayDate = new Date();
+        const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(todayDate);
+        console.log("fulldateUK: ", fulldateUK);
+        let message = `${fulldateUK}`;
+        const dateContainer = document.querySelector("#timeDiv");
+        dateContainer.innerHTML = message;
+
+        const updated = document.lastModified;
+        const pUpdate = document.querySelector('#lastUpdate');
+        message = `Last Modification ${updated}`;
+        pUpdate.innerHTML = message;
+    
+    
+        let fullYear = todayDate.getFullYear();
+        const pYear = document.querySelector('#completeYear');
+        message = `&#169; ${fullYear} Chile Green Chamber`;
+        pYear.innerHTML = message;
+
+    } catch(err) {
+        alert(err.message);
+        console.log(err.message);
+    }
 }
 
 /*
@@ -92,4 +124,6 @@ function addLine2 () {
 addLine1();
 addLine2();
 */
-insertDate();
+pageDates();
+window.addEventListener("resize", menuLargeView);
+menuLargeView();

@@ -4,6 +4,7 @@ body {
 
 #firstlineImg {
     grid-area: firstlineImg;
+    margin: 5px;
 }
 #titlesDiv {
     grid-area: titlesDiv;
@@ -153,4 +154,52 @@ main div, main div div  {
 
 #join {
     display: none;
+}
+
+footer {
+    background-color: #004b23;
+    color: #ccff33;
+    min-width: 375px;
+}
+
+#footerGeneral {
+    text-align: center;
+}
+
+#footerLogo {
+    width: 120px;
+    margin: 5px auto;
+}
+#footerTitle {
+    font-size: 1.3em;
+}
+#footerGeneral div {
+    text-align: center;
+}
+#footerAddress {
+    font-size: 0.9em;
+    width: 40%;
+    display: block;
+    margin: 5px auto;  
+}
+footer a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #ccff33;
+    margin: 8px;
+    display: block;
+}
+#footerPersonal {
+    border-top: 1px solid #ccff33;
+    padding: 10px;
+    margin: 0 10px;
+}
+#footerPersonal * {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#footerName {
+    font-size: 1.1em;
 }
