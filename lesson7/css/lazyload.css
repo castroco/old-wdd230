@@ -1,0 +1,25 @@
+body {
+    max-width: 800px;
+    min-width: 350px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img[data-src] {
+    filter: blur(0.9em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 3s;
+  }
