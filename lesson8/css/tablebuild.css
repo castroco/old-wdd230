@@ -9,11 +9,11 @@ table   {
 }
 
 tr:nth-child(odd) td {
-    background-color:  #e7f0ed;
+    background-color:  #adff5c;
   }
   
   tr:nth-child(even) td {
-    background-color: #e7ffed;
+    background-color: #d6ff5c;
   }
 
   thead tr:nth-child(1) {
