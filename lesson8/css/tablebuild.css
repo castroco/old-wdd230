@@ -44,6 +44,6 @@ tfoot tr td {
 @media only screen and (min-width: 500px) {
     table {
         width: 500px;
-        box-shadow: 12px 12px 15px #38b000 ;
+        box-shadow: 6px 6px 10px #38b000 ;
     }
 }
