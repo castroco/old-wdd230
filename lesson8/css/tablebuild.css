@@ -10,21 +10,21 @@ table   {
 
 tr:nth-child(odd) td {
     background-color:  #adff5c;
-  }
+}
   
-  tr:nth-child(even) td {
+tr:nth-child(even) td {
     background-color: #d6ff5c;
-  }
+}
 
-  thead tr:nth-child(1) {
+thead tr:nth-child(1) {
       background-color:  #006400;
       color: #cf3;
       font-size: 1.8em;
-  }
+}
 
-  thead tr:nth-child(2) {
+thead tr:nth-child(2) {
     background-color:  #004b23;
-    color: #9ef01a;
+    color: #9ef01a
 }
 
 #important {
@@ -37,8 +37,8 @@ td, th {
     padding: 8px 0;
 }
 
-tfoot tr td {
-    font-size: 0.8em;
+tfoot td {
+    background-color: #006400;
 }
 
 @media only screen and (min-width: 500px) {
