@@ -5,15 +5,23 @@ table   {
     width: 100%;
     min-width: 320px;
     border: 3px solid #004b23;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
-tr:nth-child(odd) td {
+tbody tr:nth-child(odd) td {
     background-color:  #adff5c;
 }
+
+tbody tr:nth-child(odd) td:hover {
+    background-color:  #38b000;
+}
   
-tr:nth-child(even) td {
+tbody tr:nth-child(even) td {
     background-color: #d6ff5c;
+}
+
+tbody tr:nth-child(even) td:hover {
+    background-color: #70e000;
 }
 
 thead tr:nth-child(1) {
@@ -24,12 +32,18 @@ thead tr:nth-child(1) {
 
 thead tr:nth-child(2) {
     background-color:  #004b23;
-    color: #9ef01a
+    color: #9ef01a;
 }
 
-#important {
+#spancell {
     color:  #9ef01a;
     background-color: #006400;
+}
+
+#spancell:hover {
+    color:  black;
+    background-color: #70e000;
+
 }
 
 td, th {
@@ -37,9 +51,11 @@ td, th {
     padding: 8px 0;
 }
 
-tfoot td {
-    background-color: #006400;
-}
+tfoot {
+    background-color:  #006400;
+    color: #cf3;
+    font-size: 0.7em;
+    }
 
 @media only screen and (min-width: 500px) {
     table {
