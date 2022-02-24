@@ -46,6 +46,10 @@ thead tr:nth-child(2) {
 
 }
 
+#blackFriday {
+    font-style: italic;
+}
+
 td, th {
     text-align: center;
     padding: 8px 0;
