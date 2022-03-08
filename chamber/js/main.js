@@ -107,29 +107,12 @@ function pageDates() {
     }
 }
 
-/*
-function addLine1 () {
-    const yearContainer = document.querySelector("#line1");
-    let message = `&#169; ${getYear()} .:|:. Carlos O. Castro .:|:. Chile`;
-    yearContainer.innerHTML = message;
-}
-function addLine2 () {
-    const updatedContainer = document.querySelector("#line2");
-     document.lastModified;
-    let message = `Last updated: ${document.lastModified}`;
-    updatedContainer.innerHTML = message;
-}
 
-
-addLine1();
-addLine2();
-*/
 pageDates();
 window.addEventListener("resize", menuLargeView);
 menuLargeView();
 
 function calculateWindChill(tempF, speed) {
-    /*tempF = 40;*/
     let factor = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempF * Math.pow(speed, 0.16));
     factor = Math.round(factor * 10)/10;
     if (tempF <= 50 && speed > 3) {
@@ -139,6 +122,7 @@ function calculateWindChill(tempF, speed) {
     }   
 }
 
+const test = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=458de035db81e3515f9be6da6ed7a6cc&units=imperial';
 const urlLink = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=10d779ad423d396cdcffa6696f58adce&units=imperial';
 
 fetch(urlLink)
@@ -156,7 +140,7 @@ fetch(urlLink)
             condition.textContent = `Condition: ${jsObject.weather[0].description}`;
 
             const weatherImg = document.createElement("img");
-            weatherImg.src = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+            weatherImg.src = `https://openweathermap.org/img/wn/${jsObject.weather[0].icon}.png`;
 
             const windSpeed = document.createElement("p");
             windSpeed.textContent = `Wind Speed: ${jsObject.wind.speed}`;
@@ -166,18 +150,6 @@ fetch(urlLink)
             const windChill = document.createElement("p");
             windChill.textContent = `Wind Chill: ${windChillValue}`;
             
-            /*
-            const description = jsObject.weather[0].description;
-            const winspeed = jsObject.wind.speed;
-            const humidity = jsObject.main.humidity;
-            document.getElementById('currently').textContent = desc;
-            /*document.getElementById('icon').setAttribute('src', imagesrc);
-            document.getElementById('icon').setAttribute('alt', desc);
-            document.getElementById('windspeed').textContent = winspeed;
-            document.getElementById('humidity').textContent = humidity;
-            const windchill = windChill(temperature, winspeed);
-            document.getElementById('windchill').textContent = windchill;
-            */
             weatherContainer.appendChild(title);
             weatherContainer.appendChild(temperature);
             weatherContainer.appendChild(condition);
