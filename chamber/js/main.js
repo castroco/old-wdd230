@@ -127,3 +127,63 @@ addLine2();
 pageDates();
 window.addEventListener("resize", menuLargeView);
 menuLargeView();
+
+function calculateWindChill(tempF, speed) {
+    /*tempF = 40;*/
+    let factor = 35.74 + (0.6215 * tempF) - (35.75 * Math.pow(speed, 0.16)) + (0.4275 * tempF * Math.pow(speed, 0.16));
+    factor = Math.round(factor * 10)/10;
+    if (tempF <= 50 && speed > 3) {
+        return factor;
+    } else {
+        return "N/A";
+    }   
+}
+
+const urlLink = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=10d779ad423d396cdcffa6696f58adce&units=imperial';
+
+fetch(urlLink)
+    .then((response) => response.json())
+    .then((jsObject) => {
+            console.log("jsObject: \n",jsObject);
+            const weatherContainer = document.getElementById('weather');
+            const title = document.createElement("h2");
+            title.textContent = "Weather";
+
+            const temperature = document.createElement("p");
+            temperature.textContent = `Temperature: ${jsObject.main.temp}`;
+
+            const condition = document.createElement("p");
+            condition.textContent = `Condition: ${jsObject.weather[0].description}`;
+
+            const weatherImg = document.createElement("img");
+            weatherImg.src = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+
+            const windSpeed = document.createElement("p");
+            windSpeed.textContent = `Wind Speed: ${jsObject.wind.speed}`;
+
+            const windChillValue = calculateWindChill(jsObject.main.temp, jsObject.wind.speed);
+            console.log("windChillValue: ", windChillValue);
+            const windChill = document.createElement("p");
+            windChill.textContent = `Wind Chill: ${windChillValue}`;
+            
+            /*
+            const description = jsObject.weather[0].description;
+            const winspeed = jsObject.wind.speed;
+            const humidity = jsObject.main.humidity;
+            document.getElementById('currently').textContent = desc;
+            /*document.getElementById('icon').setAttribute('src', imagesrc);
+            document.getElementById('icon').setAttribute('alt', desc);
+            document.getElementById('windspeed').textContent = winspeed;
+            document.getElementById('humidity').textContent = humidity;
+            const windchill = windChill(temperature, winspeed);
+            document.getElementById('windchill').textContent = windchill;
+            */
+            weatherContainer.appendChild(title);
+            weatherContainer.appendChild(temperature);
+            weatherContainer.appendChild(condition);
+            weatherContainer.appendChild(weatherImg);
+            weatherContainer.appendChild(windSpeed);
+            weatherContainer.appendChild(windChill);
+        }
+    )
+;

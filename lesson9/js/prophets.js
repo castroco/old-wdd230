@@ -5,7 +5,9 @@ fetch(requestURL).then(function (response) {
 })
     .then(function (jsonObject) 
         {
+            console.log("jsonObject: ", jsonObject);
             const prophets = jsonObject['prophets'];
+            console.log("prophets: ", prophets);
 
             prophets.forEach(displayProphets);
         }
@@ -27,4 +29,11 @@ function displayProphets(prophet) {
     card.appendChild(birthPlace);
     card.appendChild(image);
     document.querySelector('div.cards').appendChild(card);
+    const myTrip = {
+        "month":"July",
+        "year":"2015",
+         "temples": ["Logan", "Bountiful", "Manti", "Draper", "St. George", "Cedar City" ]
+    }
+    let x = myTrip.temples[3];
+    console.log("x: ", x);
 }

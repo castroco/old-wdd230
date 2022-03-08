@@ -98,9 +98,21 @@ main div {
     min-width: 371px;
 }
 
+main div p {
+    margin: 5px 0;
+}
+
+main div h2 {
+    margin: 5px 0;
+}
+
 main div, main div div  {
     border: 2px solid black;
     height: 200px;
+}
+
+#weather {
+    text-align: center;
 }
 
 #spotlight {
