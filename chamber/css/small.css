@@ -215,3 +215,13 @@ footer a {
 #footerName {
     font-size: 1.1em;
 }
+.cards {
+    text-align: center;
+    padding: 10px;
+    /*border: 2px solid black;*/
+    height: 100%;
+
+}
+.cards img {
+    max-width: 100%;
+}

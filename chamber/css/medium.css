@@ -39,6 +39,7 @@
         gap: 5px;
         grid-template-rows: auto;
         grid-template-areas: 
+        "cards cards"
         "hero hero"
         "news news"
         "spotlight spotlight"
@@ -127,4 +128,25 @@
         padding-top: 2px;
         border-right: 2px solid #ccff33;
     }
+
+    /* For directory web page */
+    .cards {
+        grid-area: cards;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        grid-gap: 25px;
+    }
+
+    .cards section {
+        box-shadow: 2px 2px 3px 0 rgb(0, 0, 0, 0.65);
+    }
+
+    .cards section:hover {
+        box-shadow: -2px -2px 3px 0 rgb(0, 0, 0, 0.65);
+        padding: 4px;
+    }
+
+    /* End of directory web page */
+
 }

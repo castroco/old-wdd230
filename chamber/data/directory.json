@@ -1,0 +1,7 @@
+{
+    "business": [
+        {"logo": "./logos/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
+        {"logo": "./logos/minsal.jpg", "address": "2134 Alameda Avenue ID 83646", "phone": "(308) 777-9132", "website": "https://www.minsal.cl"},
+        {"logo": "./logos/bci.jpg", "address": "2134 Alameda Avenue ID 83646", "phone": "(308) 777-9132", "website": "https://www.minsal.cl"},
+    ]
+}
