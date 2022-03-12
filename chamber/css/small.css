@@ -222,6 +222,10 @@ footer a {
     height: 100%;
 
 }
-.cards img {
-    max-width: 100%;
+
+.cards section {
+    padding-top: 0.7em;
+}
+.cards section img {
+    max-width: 70%;
 }

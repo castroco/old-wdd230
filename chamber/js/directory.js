@@ -1,6 +1,26 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const directoryInfo = {
+    "business": [
+        {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
+        {"logo": "./images/logos/scotia.svg", "address": "2134 Alameda Avenue ID 83646", "phone": "(308) 777-9132", "website": "https://https://www.scotiabankchile.cl"},
+        {"logo": "./images/logos/gob.svg", "address": "4536 Gordon Avenue ID 84560", "phone": "(305) 654-4356", "website": "https://www.minsal.cl"},
+        {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
+        {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
+        {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
+        {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
+        {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
+        {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
+        {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
+        {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
+        {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"}
+    ]
+}
 
-fetch(requestURL).then(function (response) {
+/*
+const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const jsonFile = "data/directory.json"
+
+
+fetch(jsonFile).then(function (response) {
     return response.json();
 })
     .then(function (jsonObject) 
@@ -11,28 +31,28 @@ fetch(requestURL).then(function (response) {
             prophets.forEach(displayProphets);
         }
     );
+*/
 
-function displayProphets(prophet) {  
+
+companies = directoryInfo['business'];
+console.log("companies: ", companies);
+companies.forEach(displayCompanies);
+
+function displayCompanies(company) {  
     let card = document.createElement('section');
-    let h2 = document.createElement('h2');
-    let birthDate = document.createElement('p');
-    let birthPlace = document.createElement('p');
     let image = document.createElement('img');
-    h2.textContent = `${prophet.name} ${prophet.lastname}`;
-    birthDate.textContent = `Birth Date: ${prophet.birthdate}`;
-    birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
-    image.setAttribute('src', prophet.imageurl);
-    image.setAttribute('alt', `${prophet.name} ${prophet.lastname}-${prophet.order}`);
-    card.appendChild(h2);
-    card.appendChild(birthDate);
-    card.appendChild(birthPlace);
+    let address = document.createElement('p');
+    let phone = document.createElement('p');
+    let website = document.createElement('p');
+    
+    website.textContent = `${company.website}`;
+    address.textContent = `${company.address}`;
+    phone.textContent = `${company.phone}`;
+    image.setAttribute('src', company.logo);
+    image.setAttribute('alt', `Logo of the company`);
     card.appendChild(image);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(website);
     document.querySelector('div.cards').appendChild(card);
-    const myTrip = {
-        "month":"July",
-        "year":"2015",
-         "temples": ["Logan", "Bountiful", "Manti", "Draper", "St. George", "Cedar City" ]
-    }
-    let x = myTrip.temples[3];
-    console.log("x: ", x);
 }

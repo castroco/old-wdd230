@@ -41,7 +41,6 @@ footer {
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-content: space-evenly;
         grid-gap: 25px;
     }
     .cards section:hover {
@@ -55,6 +54,5 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
-        justify-items: space-evenly;
     }
 }
