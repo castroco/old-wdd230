@@ -3,7 +3,7 @@ const directoryInfo = {
         {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
         {"logo": "./images/logos/scotia.svg", "address": "2134 Alameda Avenue ID 83646", "phone": "(308) 777-9132", "website": "https://https://www.scotiabankchile.cl"},
         {"logo": "./images/logos/gob.svg", "address": "4536 Gordon Avenue ID 84560", "phone": "(305) 654-4356", "website": "https://www.minsal.cl"},
-        {"logo": "./images/araucana.svg", "address": "719 Alameda Avenue ID 54675", "phone": "(420) 994-4565", "website": "https://www.laaraucana.cl/"},
+        {"logo": "./images/logo/araucana.svg", "address": "719 Alameda Avenue ID 54675", "phone": "(420) 994-4565", "website": "https://www.laaraucana.cl/"},
         {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
         {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
         {"logo": "./images/sii.jpg", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
