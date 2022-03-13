@@ -15,10 +15,9 @@ const directoryInfo = {
     ]
 }
 
-/*
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
-const jsonFile = "data/directory.json"
 
+const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const jsonFile = "https://castroco.github.io/wdd230/chamber/data/directory.json";
 
 fetch(jsonFile).then(function (response) {
     return response.json();
@@ -26,17 +25,17 @@ fetch(jsonFile).then(function (response) {
     .then(function (jsonObject) 
         {
             console.log("jsonObject: ", jsonObject);
-            const prophets = jsonObject['prophets'];
-            console.log("prophets: ", prophets);
-            prophets.forEach(displayProphets);
+            companies = directoryInfo['business'];
+            console.log("companies: ", companies);
+            companies.forEach(displayCompanies);
         }
     );
-*/
 
-
+/*
 companies = directoryInfo['business'];
 console.log("companies: ", companies);
 companies.forEach(displayCompanies);
+*/
 
 function displayCompanies(company) {  
     let card = document.createElement('section');
