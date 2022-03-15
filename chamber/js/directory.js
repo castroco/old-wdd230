@@ -25,8 +25,8 @@ fetch(jsonFile).then(function (response) {
     .then(function (jsonObject) 
         {
             console.log("jsonObject: ", jsonObject);
-            companies = directoryInfo['business'];
-            console.log("companies: ", companies);
+            companies = jsonObject['business'];
+            console.log("companiesaaaa: ", companies);
             companies.forEach(displayCompanies);
         }
     );
