@@ -11,6 +11,6 @@
         {"logo": "./images/logos/ram.jpg", "address": "9992 Canon Avenue ID 34562", "phone": "(234) 234-4356", "website": "http://www.ramcomputing.cl/"},
         {"logo": "./images/logos/portal.png", "address": "34567 Park Avenue ID 53675", "phone": "(340) 327-1690", "website": "https://www.portalpuentealto.cl"},
         {"logo": "./images/logos/paldia.jpg", "address": "4563 Nunoa Street ID 34198", "phone": "(320) 946-2491", "website": "https://www.puentealtoaldia.com"},
-        {"logo": "./images/fcomercio.jpg", "address": "39471 Matta Avenue ID 52936", "phone": "(824) 936-1119", "website": "https://ferreteriacomercio.cl/"}
+        {"logo": "./images/logos/fcomercio.jpg", "address": "39471 Matta Avenue ID 52936", "phone": "(824) 936-1119", "website": "https://ferreteriacomercio.cl/"}
     ]
 }
