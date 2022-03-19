@@ -37,10 +37,10 @@ function displayCompanies(company) {
 
 const cardsButton = document.querySelector("#cardsIcon");
 cardsButton.addEventListener("click", () => {
-    cardsContainer.classList.replace("diplayList","displayCards");
+    cardsContainer.classList.replace("displayList","displayCards");
 });
 
 const listButton = document.querySelector("#listIcon");
 listButton.addEventListener("click", () => {
-    cardsContainer.classList.replace("displayCards","diplayList");
+    cardsContainer.classList.replace("displayCards","displayList");
 });
