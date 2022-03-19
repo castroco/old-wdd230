@@ -215,6 +215,24 @@ footer a {
 #footerName {
     font-size: 1.1em;
 }
+
+#directoryTitle {
+    text-align: center;
+}
+#cardsView {
+    height: auto;
+    text-align: center;
+    border: 0;
+}
+
+#cardsView button {
+    margin: 10px;
+}
+
+#cardsView button img {
+    width: 50px;
+}
+
 .cards {
     text-align: center;
     padding: 10px;
@@ -223,9 +241,18 @@ footer a {
 
 }
 
-.cards section {
-    padding-top: 0.7em;
+.displayCards section {
+    padding: 0.7em 0;
+    box-shadow: 2px 2px 3px 0 rgb(0, 0, 0, 0.65);
+    margin: 10px;
 }
-.cards section img {
+
+.displayCards section:hover {
+    box-shadow: -2px -2px 3px 0 rgb(0, 0, 0, 0.65);
+    padding: 4px;
+}
+
+.displayCards section img {
     max-width: 70%;
+    max-height: 120px;
 }
