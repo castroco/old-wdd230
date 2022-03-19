@@ -4,15 +4,19 @@ const menuItems = [
         src: './index.html'
     },
     {
+        name: 'Discover',
+        src: '#'
+    },
+    {
         name: 'Directory',
         src: './directory.html'
     },
     {
-        name: 'Leo',
+        name: 'Join',
         src: '#'
     },
     {
-        name: 'Karina',
+        name: 'Contact',
         src: '#'
     }
 
