@@ -251,7 +251,7 @@ footer a {
 
 .displayCards section {
     padding: 0.7em 0;
-    box-shadow: 2px 2px 3px 0 rgb(0, 0, 0, 0.65);
+    box-shadow: 2px 2px 3px 0 #004b23;
     margin: 10px;
 }
 
@@ -270,7 +270,7 @@ footer a {
 }
 
 .displayCards section:hover {
-    box-shadow: -2px -2px 3px 0 rgb(0, 0, 0, 0.65);
+    box-shadow: -2px -2px 3px 0 #004b23;
     padding: 4px;
 }
 

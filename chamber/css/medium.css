@@ -27,7 +27,7 @@
         height: 200px;
         gap: 8px;
         padding: 10px;
-        min-width: none;
+        min-width: 0;
     }
     #spotlight div {
         min-width: 180px ;
