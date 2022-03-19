@@ -130,7 +130,7 @@
     }
 
     /* For directory web page */
-    .cards {
+    .displayCards {
         grid-area: cards;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -138,14 +138,14 @@
         grid-gap: 25px;
     }
 
-    .cards section {
+    /*.cards section {
         box-shadow: 2px 2px 3px 0 rgb(0, 0, 0, 0.65);
-    }
+    }*/
 
-    .cards section:hover {
+    /*.cards section:hover {
         box-shadow: -2px -2px 3px 0 rgb(0, 0, 0, 0.65);
         padding: 4px;
-    }
+    }*/
 
     /* End of directory web page */
 

@@ -132,17 +132,17 @@
     }
 
      /* For directory web page */
-     .cards {
+     .displayCards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-evenly;
         grid-gap: 25px;
     }
 
-    .cards section:hover {
+    /*.cards section:hover {
         box-shadow: -2px -2px 3px 0 rgb(0, 0, 0, 0.65);
         padding: 4px;
-    }
+    }*/
 
     /* End of directory web page */
 

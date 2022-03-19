@@ -94,7 +94,7 @@ main {
     display: block;
 }
 
-main div {
+main div, main h2 {
     min-width: 371px;
 }
 
