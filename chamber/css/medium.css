@@ -11,6 +11,11 @@
     #weather {
         grid-area: weather;
     }
+
+    #weather h2 {
+        min-width: 0;
+    }
+
     #news {
         grid-area: news;
     }
