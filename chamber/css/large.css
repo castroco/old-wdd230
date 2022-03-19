@@ -42,6 +42,8 @@
         gap: 5px;
         grid-template-rows: auto;
         grid-template-areas: 
+        "gDirectoryTitle gDirectoryTitle gDirectoryTitle"
+        "gCardsView gCardsView gCardsView"
         "cards cards cards"
         "event hero spotlight"
         "weather hero spotlight"
@@ -132,11 +134,15 @@
     }
 
      /* For directory web page */
-     .displayCards {
+    .displayCards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: space-evenly;
         grid-gap: 25px;
+    }
+
+    .displayList section {
+        display: grid;
+        grid-template-columns:  0.7fr 1.1fr 0.7fr 1fr;
     }
 
     /*.cards section:hover {

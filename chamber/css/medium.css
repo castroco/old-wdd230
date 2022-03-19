@@ -33,12 +33,22 @@
         height: 200px;
     }
 
+    #directoryTitle {
+        grid-area: gDirectoryTitle ;
+    }
+
+    #cardsView {
+        grid-area: gCardsView;
+    }
+
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 5px;
         grid-template-rows: auto;
-        grid-template-areas: 
+        grid-template-areas:
+        "gDirectoryTitle gDirectoryTitle"
+        "gCardsView gCardsView"
         "cards cards"
         "hero hero"
         "news news"
@@ -136,6 +146,12 @@
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
         grid-gap: 25px;
+    }
+
+    .displayList {
+        grid-area: cards;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     /*.cards section {
