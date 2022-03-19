@@ -1,16 +1,16 @@
 {
     "business": [
         {"logo": "./images/sii.jpg","name": "Tax Services", "address": "4208 Park Avenue ID 83652", "phone": "(307) 754-4509", "website": "https://www.sii.cl"},
-        {"logo": "./images/logos/scotia.svg","name": "Tax Services", "address": "2134 Alameda Avenue ID 83646", "phone": "(308) 777-9132", "website": "https://https://www.scotiabankchile.cl"},
-        {"logo": "./images/logos/gob.svg","name": "Tax Services", "address": "4536 Gordon Avenue ID 84560", "phone": "(305) 654-4356", "website": "https://www.minsal.cl"},
-        {"logo": "./images/logos/araucana.svg","name": "Tax Services", "address": "5546 Rucamapu St. ID 83652", "phone": "(406) 230-1713", "website": "https://www.laaraucana.cl"},
-        {"logo": "./images/logos/heroes.png","name": "Tax Services", "address": "1123 Las Condes Avenue ID 83652", "phone": "(234) 143-2345", "website": "https://www.losheroes.cl"},
-        {"logo": "./images/logos/pizza.png","name": "Tax Services", "address": "3452 Cordillera Avenue ID 84325", "phone": "(243) 456-4321", "website": "https://www.pizzapizza.cl/"},
-        {"logo": "./images/logos/seven.png","name": "Tax Services", "address": "3412 Baquedano Avenue ID 43567", "phone": "(345) 375-5367", "website": "https://sevenpizza.cl/"},
-        {"logo": "./images/logos/pdelsol.png","name": "Tax Services", "address": "3453 Ohiggins Avenue ID 32457", "phone": "(205) 346-7493", "website": "https://www.pizzeriadelsol.cl/"},
-        {"logo": "./images/logos/ram.jpg","name": "Tax Services", "address": "9992 Canon Avenue ID 34562", "phone": "(234) 234-4356", "website": "http://www.ramcomputing.cl/"},
-        {"logo": "./images/logos/portal.png","name": "Tax Services", "address": "34567 Park Avenue ID 53675", "phone": "(340) 327-1690", "website": "https://www.portalpuentealto.cl"},
-        {"logo": "./images/logos/paldia.jpg","name": "Tax Services", "address": "4563 Nunoa Street ID 34198", "phone": "(320) 946-2491", "website": "https://www.puentealtoaldia.com"},
-        {"logo": "./images/logos/fcomercio.jpg","name": "Tax Services", "address": "39471 Matta Avenue ID 52936", "phone": "(824) 936-1119", "website": "https://ferreteriacomercio.cl/"}
+        {"logo": "./images/logos/scotia.svg","name": "Scotia Bank", "address": "2134 Alameda Avenue ID 83646", "phone": "(308) 777-9132", "website": "https://https://www.scotiabankchile.cl"},
+        {"logo": "./images/logos/gob.svg","name": "Health Department", "address": "4536 Gordon Avenue ID 84560", "phone": "(305) 654-4356", "website": "https://www.minsal.cl"},
+        {"logo": "./images/logos/araucana.svg","name": "La Araucana", "address": "5546 Rucamapu St. ID 83652", "phone": "(406) 230-1713", "website": "https://www.laaraucana.cl"},
+        {"logo": "./images/logos/heroes.png","name": "The Heros", "address": "1123 Las Condes Avenue ID 83652", "phone": "(234) 143-2345", "website": "https://www.losheroes.cl"},
+        {"logo": "./images/logos/pizza.png","name": "Pizza Pizza", "address": "3452 Cordillera Avenue ID 84325", "phone": "(243) 456-4321", "website": "https://www.pizzapizza.cl/"},
+        {"logo": "./images/logos/seven.png","name": "Seven Pizza", "address": "3412 Baquedano Avenue ID 43567", "phone": "(345) 375-5367", "website": "https://sevenpizza.cl/"},
+        {"logo": "./images/logos/pdelsol.png","name": "Del sol Pizza", "address": "3453 Ohiggins Avenue ID 32457", "phone": "(205) 346-7493", "website": "https://www.pizzeriadelsol.cl/"},
+        {"logo": "./images/logos/ram.jpg","name": "Ram Computing", "address": "9992 Canon Avenue ID 34562", "phone": "(234) 234-4356", "website": "http://www.ramcomputing.cl/"},
+        {"logo": "./images/logos/portal.png","name": "Portal Puente Alto", "address": "34567 Park Avenue ID 53675", "phone": "(340) 327-1690", "website": "https://www.portalpuentealto.cl"},
+        {"logo": "./images/logos/paldia.jpg","name": "Puente Alto Today", "address": "4563 Nunoa Street ID 34198", "phone": "(320) 946-2491", "website": "https://www.puentealtoaldia.com"},
+        {"logo": "./images/logos/fcomercio.jpg","name": "Hardware Store", "address": "39471 Matta Avenue ID 52936", "phone": "(824) 936-1119", "website": "https://ferreteriacomercio.cl/"}
     ]
 }
