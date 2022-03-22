@@ -145,6 +145,24 @@
         grid-template-columns:  0.7fr 1.1fr 0.7fr 1fr;
     }
 
+    #event h2 {
+        padding: 3px 0;
+        min-width: 0;
+        margin: 0 0 15px 0;
+    }
+
+    #event h3 {
+        display: none;
+    }
+    
+    #aditional {
+        display: none;
+    }
+
+    #event p {
+        margin: 15px 0;
+    }
+
     /*.cards section:hover {
         box-shadow: -2px -2px 3px 0 rgb(0, 0, 0, 0.65);
         padding: 4px;

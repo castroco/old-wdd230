@@ -300,3 +300,33 @@ footer a {
    max-width: 130%;
    min-height: 100%;
 }
+
+#event {
+    overflow: hidden;
+    text-align: center;
+}
+
+#event h2 {
+    color: #004b23;
+    background-color: #ccff33;
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+#event h3 {
+    color: #004b23;
+    margin: 9px 0;
+}
+
+#event a {
+    text-decoration: none;
+    color: #004b23;
+    background-color: #ccff33;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+#event a:hover {
+    background-color: #004b23;
+    color: #ccff33;
+}
