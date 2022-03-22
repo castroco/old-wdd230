@@ -36,7 +36,16 @@
     </header>
         
     <main>
-        <div id="hero">Hero 2</div>
+        <div id="hero">
+            <picture id="heroContainer">
+                <source media="(max-width: 479px)" srcset="images/hero479.jpg">
+                <source media="(min-width: 479px) and (max-width: 622px)" srcset="images/hero622.jpg">
+                <source media="(min-width: 622px) and (max-width: 800px)" srcset="images/hero800.jpg">
+                <source media="(min-width: 800px) and (max-width: 872px)" srcset="images/hero9.jpg">
+                <source media="(min-width: 872px)" srcset="images/hero9.jpg">
+                <img id="hero-img" src="images/hero9.jpg" alt="main hero picture"> 
+            </picture>
+        </div>
         <div id="event" >Event</div>
         <div id="weather"></div>
         <div id="news">News</div>

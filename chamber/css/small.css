@@ -1,5 +1,7 @@
 body {
     font-family: 'Roboto Slab', serif;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 #firstlineImg {
@@ -151,7 +153,6 @@ main div, main div div  {
     background-color: #006400;
     color: #9ef01a;
     padding: 0 1rem;
-    
 }
 
 .menuHidden, #spotlight3 {
@@ -285,4 +286,17 @@ footer a {
 
 .displayList section img {
     display: none;
+}
+
+#hero {
+    overflow: hidden;
+}
+
+#hero picture {
+    text-align: center;
+}
+
+#hero picture img {
+   max-width: 130%;
+   min-height: 100%;
 }
