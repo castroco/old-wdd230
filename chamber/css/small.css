@@ -326,7 +326,30 @@ footer a {
     border-radius: 10px;
 }
 
-#event a:hover {
+#event a:hover, #news a:hover {
     background-color: #004b23;
     color: #ccff33;
+}
+
+#news {
+    overflow: hidden;
+    text-align: center;
+}
+
+#news h2 {
+    color: #004b23;
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+#news p {
+    margin: 15px 0;
+}
+
+#news a {
+    text-decoration: none;
+    color: #004b23;
+    background-color: #ccff33;
+    padding: 5px 20px;
+    border-radius: 10px;
 }
