@@ -163,6 +163,19 @@
         margin: 15px 0;
     }
 
+    #join a {
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.1em;
+    }
+    #join p {
+        display: block;
+        margin: 10px 10px;
+    }
+
     /*.cards section:hover {
         box-shadow: -2px -2px 3px 0 rgb(0, 0, 0, 0.65);
         padding: 4px;

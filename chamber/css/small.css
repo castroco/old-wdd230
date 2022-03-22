@@ -353,3 +353,24 @@ footer a {
     padding: 5px 20px;
     border-radius: 10px;
 }
+
+#join {
+    text-align: center;
+}
+
+#join a {
+    text-decoration: none;
+    background-color: #004b23;
+    color: #ccff33;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+#join p {
+    display: block;
+    margin: 40px 20px;
+}
